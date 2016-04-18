@@ -1,0 +1,23 @@
+/* Navigation
+-------------------------------------------------------------- */
+@import '../utils/media_sizes.scss';
+
+nav,
+#navi
+{
+    float: right;
+
+    margin-top: 15px;
+}
+
+nav a
+{
+    color: map_get($colors, 'secondary');
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover
+{
+    background-color: map_get($colors, 'background-secondary');
+}

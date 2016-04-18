@@ -1,0 +1,18 @@
+@import '../utils/mixins/_pictured_list.scss';
+
+.social
+{
+    display: inline-block;
+    float: left;
+
+    margin: 20px 0 0 5px;
+    padding: 0;
+
+    $pictire_width: 24px;
+    $pictire_height: 24px;
+    $sub-element-display: inline-block;
+    $socials_pictures_source: '../images/light-social.png';
+    $socials_list: 'facebook', 'twitter', 'dribbble', 'plus.google', 'flickr',
+    'rss', 'mailto', 'vk';
+    @include _pictured_list ($socials_list, $socials_pictures_source, $sub-element-display, $pictire_width, $pictire_height);
+}

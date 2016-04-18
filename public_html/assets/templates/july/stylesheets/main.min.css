@@ -1,0 +1,23 @@
+body,
+body * {
+  color: #275927;
+}
+
+body * {
+  font-size: 100%;
+}
+
+body {
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  background-image: url(../images/main-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+}

@@ -1,0 +1,26 @@
+@import _list;
+
+@mixin _menu_list (
+	$menu_type
+)	{
+
+	@include _list ($menu_type);
+
+	& > li > a {
+	display: inline-block;
+	}
+}
+
+
+
+@mixin _iconed_list (
+	$sub_element_display,
+	$icones_source,
+	$text_display,
+	$icons_display,
+	$icons_weigth,
+	$icons_heidht
+
+)	{
+	@include _list ($sub_element_display);
+}

@@ -1,0 +1,11 @@
+/* Main
+-------------------------------------------------------------- */
+@import '../utils/media_sizes.scss';
+
+main
+{
+    background-image: url('../images/main-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+}

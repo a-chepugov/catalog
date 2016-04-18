@@ -1,0 +1,16 @@
+{
+  "name": "fitokartina.com_catalog",
+  "version": "1.0.0",
+  "main": "path/to/main.css",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "normalize-css": "normalize.css#~3.0.3",
+    "requirejs": "~2.1.22",
+    "backbone": "^1.2.3"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,3 @@
+({
+	mainConfigFile:'requirejs-config.js'
+})

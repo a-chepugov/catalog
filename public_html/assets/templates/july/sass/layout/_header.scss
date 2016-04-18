@@ -1,0 +1,87 @@
+/* Header
+-------------------------------------------------------------- */
+
+
+img.logo
+{
+    display: inline-block;
+
+    height: 100%;
+}
+
+.brand
+{
+    font-family: sans-serif;
+    font-size: 42px;
+
+    text-decoration: none;
+    word-break: break-all;
+
+    color: #184818;
+}
+.brand:hover
+{
+    text-decoration: none;
+}
+.brand span
+{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: normal;
+}
+.brand .logo
+{
+    display: inline-block;
+    float: left;
+
+    width: 75%;
+    max-height: 75px;
+    margin: 15px;
+}
+
+#slogan
+{
+    font-size: 32px;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 50px;
+    left: 3%;
+
+    padding: 0 5px;
+
+    color: map_get($colors, 'quaternary');// #006700;
+    border-radius: 100% 50% ;
+    background-color: rgba(0, 0, 0, 0);
+    text-shadow: -1px -1px 3px white, 0 0 .33em #fffc0b, 0 0 10px blue, 1px 1px 3px black;
+}
+
+#page-header
+{
+    border-color: map_get($colors, 'tertiary'); //#006600
+    border-bottom: solid;
+}
+
+#Consultation
+{
+    font-size: 48px;
+
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    right: 3%;
+
+    color: map_get($colors, 'tertiary');// #006700;
+    background-color: rgba(0, 0, 0, 0);
+    text-shadow: 1px 1px 2px white, 0 0 .33em #fffc0b;
+
+    & button
+    {
+        font-size: .55em;
+
+        border-width: 2px;
+        //background-color: rgba(121, 209, 35, 0.25);
+        border-color: rgb(84, 150, 26);
+        background-color: rgba(138, 235, 38, .5);
+    }
+}

@@ -1,0 +1,19 @@
+.page-header
+{
+    border-bottom: 1px solid silver;
+}
+
+hr
+{
+    //color: map_get($colors, "primary");
+}
+
+.v-align-c
+{
+    display: inline-block;
+    float: none;
+
+    margin-left: -1em;
+
+    vertical-align: bottom;
+}

@@ -1,0 +1,11 @@
+@mixin _list (
+	$sub_element_display,
+	$list-style: none
+)	{
+
+	list-style: $list-style;
+
+	& > li {
+		display: $sub-element-display;
+	}
+}

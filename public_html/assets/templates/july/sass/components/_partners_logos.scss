@@ -1,0 +1,45 @@
+@import '../utils/media_sizes';
+
+.partners-logos .title
+{
+    font-size: 1.5em;
+
+    position: relative;
+    top: -15px;
+
+    text-align: center;
+}
+
+.partners-logos .item
+{
+    padding: 0 10px;
+
+    text-align: center;
+}
+
+.partners-logos .item img
+{
+    display: inline-block;
+
+    width: 80%;
+    max-width: 115px;
+    margin: 0 3%;
+}
+
+.partners-logos .carousel-control.right
+{
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.0001) 100%);
+    background-image:    linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.0001) 100%);
+    background-repeat: repeat-x;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#80000000', GradientType=1);
+}
+
+.partners-logos .carousel-control.left
+{
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.0001) 100%);
+    background-image:    linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.0001) 100%);
+    background-repeat: repeat-x;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#80000000', GradientType=1);
+}

@@ -1,0 +1,100 @@
+@import "_list";
+
+@mixin _pictured_list (
+	$pictures_list,
+	$pictures_source,
+	$sub_element_display: block,
+	$pictire_width: 24px,
+	$pictire_height: 24px
+	) {
+
+	@include _list ($sub_element_display);
+
+	& li {
+		margin: 0 1px 0 0;
+
+		& a {
+		  display:inline-block;
+		  max-width: $pictire_width;
+		  max-height: $pictire_height;
+		  overflow:hidden;
+
+		  &:before {
+			content: "";
+			width: $pictire_width;
+			height: $pictire_height;
+			display: inline-block;
+
+			background: url($pictures_source) no-repeat top left;
+			}
+
+		$y : 0px;
+			@each $href_block in $pictures_list {
+			&[href*="#{$href_block}"] {
+			  &:before		{ background-position: 0 $y; }
+			  &:hover:before	{ background-position: -1*$pictire_width $y; }
+			}
+			$y : $y - $pictire_height;
+		  }
+		}
+	}
+}
+
+
+
+@mixin pictired_list3 (
+$pictures_list,
+$pictures_source,
+$sub_element_display,
+$picture_width,
+$picture_height
+) {
+
+  width: 100%;
+  list-style: none;
+  text-align: center;
+
+
+  & li {
+	display:inline-block;
+	vertical-align: top;
+	margin: 40px 10px;
+	text-align: center;
+	font-size: 0.75em;
+	max-width: $picture_width;
+	width: 125px;
+	
+
+	& a {
+	  display:inline-block;
+	  width: $picture_width;
+	  text-decoration: none;
+
+	  opacity: 0.33;
+	  &:hover {
+		opacity: 0.75;
+		text-decoration: underline;
+	  }
+
+
+	  &:before {
+		content: "";
+		width: $picture_width;
+		height: $picture_height;
+		display: inline-block;
+
+		background: url($pictures_source) no-repeat top left;
+	  }
+
+
+
+	  $y : 0px;
+	  @each $href_block in $pictures_list {
+		&[href*="#{$href_block}"] {
+		  &:before		{ background-position: 0 $y; }
+		}
+		$y : $y - $picture_height;
+	  }
+	}
+  }
+}

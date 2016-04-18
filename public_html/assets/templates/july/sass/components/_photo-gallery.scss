@@ -1,0 +1,50 @@
+.fancyimage img
+{
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: map_get($colors, 'tertiary');
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    &:hover
+    {
+        box-shadow: 0 0 1px map_get($colors, 'secondary'), 1px 1px 9px map_get($colors, 'tertiary');
+    }
+}
+
+.more
+{
+    font-family: serif;
+    font-size: 30px;
+
+    display: block;
+
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    padding-top: 35%;
+
+    -webkit-transform: rotate(-15deg);  /* Safari y Chrome */
+       -moz-transform: rotate(-15deg);  /* Firefox */
+         -o-transform: rotate(-15deg);  /* Opera */
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: map_get($colors, 'tertiary');
+    border-radius: 50%;
+    background-color: white;
+
+    object-fit: cover;
+
+    &:hover
+    {
+        text-decoration: none;
+
+        box-shadow: 0 0 1px map_get($colors, 'secondary'), 1px 1px 9px map_get($colors, 'tertiary');
+    }
+}

@@ -1,0 +1,24 @@
+// Описание:
+// Имя класса для размера, минимальный размер, максимальный размер
+
+$media_sizes: (
+		1: ('xs' 0 360px), // mobile
+		2: ('s' 361px 767px), // phablet
+		3: ('m' 768px 979px), // tablet
+		4: ('l' 980px 1279px), // desktop
+		5: ('xl' 1280px 9999px) // desktopHD
+);
+
+/* Larger than mobile */
+
+/*
+@media (min-width: $mobile) {
+}
+*/
+
+/* Smaller than phablet (also point when grid becomes active) */
+
+/*
+@media (max-width: $phablet) {
+}
+*/

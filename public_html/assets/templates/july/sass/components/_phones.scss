@@ -1,0 +1,46 @@
+$operators_logos: (
+		'kievstar'	:	'../images/phone_operators/kyivstar-logo-24x24.png',
+		'mts'		:	'../images/phone_operators/mts-logo-24x24.png',
+		'life'		:	'../images/phone_operators/life-logo-24x24.png',
+);
+
+$operators_codes: (
+		'kievstar'	:	'+38067' '+38096' '+38097' '+38098',
+		'mts'		:	'+38050' '+38066' '+38095' '+38099',
+		'life'		:	'+38063' '+38093',
+);
+
+.phones
+{
+    margin-top: 15px;
+
+    list-style: none;
+
+    & a
+    {
+        text-decoration: none;
+        &:hover
+        {
+            text-decoration: underline;
+        }
+        &:before
+        {
+            display: inline-block;
+
+            margin-right: 10px;
+
+            vertical-align: middle;
+        }
+
+        @each $operator_name, $operator_codes in $operators_codes
+        {
+            @each $operator_code in $operator_codes
+            {
+                &[content*='tel:#{$operator_code}']:before
+                {
+                    //content: url(map-get($operators_logos,$operator_name));
+                }
+            }
+        }
+    }
+}

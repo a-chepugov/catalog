@@ -1,0 +1,67 @@
+/* Misc classes
+-------------------------------------------------------------- */
+.removed
+{
+    display: none;
+}
+
+.small
+{
+    font-size: .8em; line-height: 1.875em; margin-bottom: 1.875em;
+}
+.large
+{
+    font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em;
+}
+.hide
+{
+    display: none;
+}
+
+.quiet
+{
+    color: #666;
+}
+.loud
+{
+    color: #000;
+}
+.highlight
+{
+    background: #ff0;
+}
+.added
+{
+    color: #fff;
+    background: #060;
+}
+.removed
+{
+    color: #fff;
+    background: #900;
+}
+
+.first
+{
+    margin-left: 0; padding-left: 0;
+}
+.last
+{
+    margin-right: 0; padding-right: 0;
+}
+.top
+{
+    margin-top: 0; padding-top: 0;
+}
+.bottom
+{
+    margin-bottom: 0; padding-bottom: 0;
+}
+
+.text-truncate
+{
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
